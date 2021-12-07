@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="flex justify-center mt-20 w-full">
+                <div class="w-6/12 img1">
+                    <img src="img/mac.png" alt="...">
+                </div>
+                <div class="w-4/12 mx-20 ">
+                    <h1 class="text-4xl">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="my-5 text-justify">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency
+                        cores,
+                        7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic
+                        Mouse Magic Keyboard US English </p>
+
+
+                    <!-- Memory//Storage//Delivery_option -->
+
+                    <span class="font-semibold mt-5">Memory</span>
+                    <div>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="ram8-input">
+                            8GB unified memory
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5" id="ram16-input">
+                            16GB unified memory
+                        </button>
+                    </div>
+                    <!-- Storage  -->
+                    <span class="font-semibold mt-5 mb-2">Storage</span>
+                    <div>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5" id="storage256-input">
+                            256GB SSD storage
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5" id="storage512-input">
+                            512GB SSD storage
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5" id="storage1tb-input">
+                            1TB SSD storage
+                        </button>
+                    </div>
+                    <!-- Delivery_op -->
+                    <span class="font-semibold mt-5">Choose your delivery option</span>
+                    <div>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5" id="delivery-prime-input">
+                            Friday, Aug 25 FREE
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded" id="delivery_free-input">
+                            Aug 21 Delivery charge $20 
+                        </button>
+                    </div>
+
+                    <!-- Total Price  -->
+                    <div class="grid grid-cols-1 divide-y divide-black-500 w-6/12 mt-5 font-semibold">
+                        <!-- price  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Best Price</p>
+                            <p class="w-3/12"> $ <span id="best-price">1299</span></p>
+                        </div>
+                        <!-- memory  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Extra Memory Cost</p>
+                            <p class="w-3/12"> $ <span id="ram-cost">0</span></p>
+                        </div>
+                        <!-- storage  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Extra Storage Cost</p>
+                            <p class="w-3/12"> $ <span id="storage-cost">0</span></p>
+                        </div>
+                        <!-- delivery  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Delivery charge</p>
+                            <p class="w-3/12"> $ <span id="delivery-cost">0</span></p>
+                        </div>
+                        <!-- total  -->
+                        <div class="flex justify-between mb-5">
+                            <p class="w-9/12">Total Price</p>
+                            <p class="w-3/12"> $ <span id="sub-total">1299</span></p>
+                        </div>
+
+                    </div>
+
+                    <!-- coupon code -->
+                    <div>
+                        <span class="font-semibold mt-10 mb-5">Add Promo Code</span>
+                        <div>
+                            <input type="text" class="px-4 py-2 leading-tight border border-gray-500 rounded mb-5"
+                                id="promo-code">
+                            <button
+                                class="bg-red-500 hover:bg-transparent text-white hover:text-black py-2 px-4 border border-red-500 rounded mb-5"
+                                id="promo-button">
+                                Apply
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- TOTAL PRICE  -->
+            <div class="divide-y divide-black-500 text-5xl text-center">
+                <div></div>
+                <div class="flex justify-center p-4">
+                    <p class="">Total</p>
+                    <p class=""> $ <span id="total">0</span></p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
